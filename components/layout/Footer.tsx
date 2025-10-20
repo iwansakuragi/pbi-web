@@ -49,11 +49,13 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-lg">PB</span>
-              </div>
+              <img 
+                src="/images/pbi-logos.png" 
+                alt="Perkumpulan Bekam Indonesia" 
+                className="w-10 h-10 object-contain"
+              />
               <div>
-                <div className="font-bold text-white">Persatuan Bekam</div>
+                <div className="font-bold text-white">Perkumpulan Bekam</div>
                 <div className="text-emerald-300 text-xs -mt-1">Indonesia</div>
               </div>
             </Link>
@@ -107,7 +109,7 @@ export function Footer() {
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Persatuan Bekam Indonesia. All rights reserved.
+              © {new Date().getFullYear()} Perkumpulan Bekam Indonesia. All rights reserved.
             </div>
             
             <div className="flex items-center gap-4">

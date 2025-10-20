@@ -26,13 +26,12 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-lg">PB</span>
-            </div>
-            <div className="hidden sm:block">
-              <div className="font-bold text-gray-900">Persatuan Bekam</div>
-              <div className="text-xs text-gray-500 -mt-1">Indonesia</div>
-            </div>
+            <img 
+              src="/images/pbi-logos.png" 
+              alt="Perkumpulan Bekam Indonesia" 
+              className="w-15 h-15 object-contain"
+            />
+           
           </Link>
 
           {/* Desktop Navigation */}

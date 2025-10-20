@@ -1,34 +1,24 @@
 // app/page.tsx
-import { Hero } from '@/components/home/Hero'
-import { TrustIndicators } from '@/components/home/TrustIndicators'
+import { AnimatedTrustIndicators } from '@/components/home/AnimatedTrustIndicators'
+import { ImmersiveStory } from '@/components/home/ImmersiveStory'
 import { QuickAccess } from '@/components/home/QuickAccess'
 import { LatestArticles } from '@/components/home/LatestArticles'
 import { UpcomingEvents } from '@/components/home/UpcomingEvents'
 import { Testimonials } from '@/components/home/Testimonials'
 import { CTA } from '@/components/home/CTA'
+// import { ProfessionalHero } from '@/components/home/ProfessionalHero'
+import { ImmersiveHero } from '@/components/home/ImmersiveHero'
 
 export default async function HomePage() {
   return (
     <>
-      {/* Hero Section - Human Centric */}
-      <Hero />
-      
-      {/* Trust Indicators - Purpose Driven */}
-      <TrustIndicators />
-      
-      {/* Quick Access - Technology Driven */}
+      <ImmersiveHero />
+      <AnimatedTrustIndicators />
+      <ImmersiveStory />
       <QuickAccess />
-      
-      {/* Latest Articles - Content Marketing */}
       <LatestArticles />
-      
-      {/* Upcoming Events - Community Building */}
       <UpcomingEvents />
-      
-      {/* Testimonials - Social Proof */}
       <Testimonials />
-      
-      {/* Final CTA - Conversion Focused */}
       <CTA />
     </>
   )
