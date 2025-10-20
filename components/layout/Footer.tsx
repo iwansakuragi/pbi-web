@@ -2,6 +2,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react'
 
 const footerSections = [
@@ -49,7 +50,7 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-3 mb-6">
-              <img 
+              <Image 
                 src="/images/pbi-logos.png" 
                 alt="Perkumpulan Bekam Indonesia" 
                 className="w-10 h-10 object-contain"

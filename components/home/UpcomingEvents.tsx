@@ -4,7 +4,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { fetchEvents, type Event } from '@/lib/api'
 import { motion } from 'framer-motion'
-import { Calendar, MapPin, ArrowRight } from 'lucide-react'
+import { Calendar, MapPin } from 'lucide-react'
 import Link from 'next/link'
 
 export function UpcomingEvents() {

@@ -56,7 +56,8 @@ export interface Event {
   updated_at: string
 }
 
-export interface EventListResponse extends ApiResponse<Event[]> {}
+// Ganti interface dengan type untuk menghindari empty interface
+export type EventListResponse = ApiResponse<Event[]>
 
 // Practitioner Types
 export interface Practitioner {
@@ -96,7 +97,8 @@ export interface Certificate {
   updated_at: string
 }
 
-export interface CertificateVerificationResponse extends ApiResponse<Certificate> {}
+// Ganti interface dengan type untuk menghindari empty interface
+export type CertificateVerificationResponse = ApiResponse<Certificate>
 
 // Statistics Types
 export interface Statistics {
@@ -108,7 +110,8 @@ export interface Statistics {
   pending_certifications: number
 }
 
-export interface StatisticsResponse extends ApiResponse<Statistics> {}
+// Ganti interface dengan type untuk menghindari empty interface
+export type StatisticsResponse = ApiResponse<Statistics>
 
 // Auth Types
 export interface LoginCredentials {
@@ -154,11 +157,38 @@ export interface RegistrationData {
   agree_to_data_processing: boolean
 }
 
-export interface RegistrationResponse extends ApiResponse<{
+// Registration Types
+export interface RegistrationData {
+  // Personal Data
+  name: string
+  nik: string
+  date_of_birth: string
+  gender: 'male' | 'female'
+  
+  // Contact & Address
+  email: string
+  phone: string
+  address: string
+  province: string
+  city: string
+  postal_code: string
+  
+  // Practice Information
+  experience_years: number
+  practice_location: string
+  education_background: string
+  
+  // Agreement
+  agree_to_terms: boolean
+  agree_to_data_processing: boolean
+}
+
+// GANTI interface dengan type untuk menghindari empty interface
+export type RegistrationResponse = ApiResponse<{
   id: number
   registration_number: string
   status: 'pending' | 'approved' | 'rejected'
-}> {}
+}>
 
 // API Client Functions
 

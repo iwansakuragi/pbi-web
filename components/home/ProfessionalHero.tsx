@@ -2,9 +2,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Play, Users, Award, Shield, MapPin, Sparkles } from 'lucide-react'
+import { ArrowRight, Play, Award, Sparkles } from 'lucide-react'
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export function ProfessionalHero() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)
@@ -83,7 +83,7 @@ export function ProfessionalHero() {
                 { number: '1,234+', label: 'Anggota' },
                 { number: '5,678+', label: 'Sertifikat' },
                 { number: '34', label: 'Provinsi' }
-              ].map((stat, index) => (
+              ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-1">{stat.number}</div>
                   <div className="text-sm text-slate-400">{stat.label}</div>

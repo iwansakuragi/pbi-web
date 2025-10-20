@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Play, Users } from 'lucide-react'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 // Komponen particles yang terpisah - hanya render di client
 function FloatingParticles() {
@@ -162,7 +163,7 @@ export function ImmersiveHero() {
               <div className="aspect-video bg-gradient-to-br from-emerald-500/20 to-blue-600/20 flex items-center justify-center relative">
                 {/* Video Thumbnail */}
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                  <img 
+                  <Image 
                     src="https://img.youtube.com/vi/-ZqW1QNtKbw/maxresdefault.jpg"
                     alt="Video Profil Persatuan Bekam Indonesia"
                     className="w-full h-full object-cover opacity-70"

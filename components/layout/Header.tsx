@@ -5,7 +5,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, User, Search } from 'lucide-react'
+import { Menu, X, User } from 'lucide-react'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Beranda', href: '/' },
@@ -26,7 +27,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <img 
+            <Image 
               src="/images/pbi-logos.png" 
               alt="Perkumpulan Bekam Indonesia" 
               className="w-15 h-15 object-contain"

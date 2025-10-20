@@ -3,9 +3,9 @@
 
 import { useQuery } from '@tanstack/react-query'
 import { fetchStatistics } from '@/lib/api'
-import { motion, useInView, useMotionValue, useTransform, animate } from 'framer-motion'
+import { motion, useMotionValue, useTransform, animate } from 'framer-motion'
 import { useRef, useEffect, useState } from 'react'
-import { Users, Award, MapPin, Shield, Heart } from 'lucide-react'
+import { Users, Award, MapPin, Heart } from 'lucide-react'
 
 // Komponen AnimatedCounter yang aman untuk SSR
 function AnimatedCounter({ value, duration = 2 }: { value: number; duration?: number }) {
