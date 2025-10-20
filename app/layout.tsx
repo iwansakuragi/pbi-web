@@ -14,16 +14,16 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Persatuan Bekam Indonesia - Standar Profesional Praktik Bekam',
+    default: 'Perkumpulan Bekam Indonesia - Standar Profesional Praktik Bekam',
     template: '%s | Persatuan Bekam Indonesia'
   },
   description: 'Bergabung dengan ribuan praktisi bekam tersertifikasi yang berkomitmen memberikan layanan terbaik dan terpercaya di Indonesia.',
   keywords: ['bekam', 'sertifikasi bekam', 'praktisi bekam', 'hijamah', 'pengobatan islami'],
-  authors: [{ name: 'Persatuan Bekam Indonesia' }],
+  authors: [{ name: 'Perkumpulan Bekam Indonesia' }],
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    siteName: 'Persatuan Bekam Indonesia'
+    siteName: 'Perkumpulan Bekam Indonesia'
   }
 }
 
